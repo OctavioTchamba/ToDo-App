@@ -84,13 +84,16 @@ function App() {
   }
   
   return (
-    <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
-      <div className="w-[500px] space-y-4">
-        <h1 className="text-3xl text-slate-100 font-bold text-center">
+    <div className="min-h-screen w-full bg-slate-500 flex justify-center p-4 sm:p-6">
+      <div className="w-full max-w-[500px] space-y-4">
+        <h1 className="text-2xl sm:text-3xl text-slate-100 font-bold text-center">
           Gerenciador de Tarefas
         </h1>
         <AddTask  onAddTask={onAddTask} />
         <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTask={onDeleteTask}/>
+
+        <h1 className="font-bold text-slate-200 text-2xl">2024 &copy; Vakeetu Ethinnics Technologies</h1>
+        <p className="font-bold text-slate-200">Inovação com Raízes na Tradição</p>
       </div>
     </div>
   );
